@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101a2a" />
+    <title>Vice Harbor — Afterglow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="game"></div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">V</span><div><b>VICE HARBOR</b><small>AFTERGLOW DISTRICT</small></div></div>
+      <div class="top-center"><span class="live-dot"></span> LIVE IN THE CITY <i></i> <span id="clock">18:42</span></div>
+      <div class="profile"><span class="profile-label">LOCAL PROFILE</span><span class="profile-avatar">K</span></div>
+    </header>
+    <main class="hud">
+      <section class="mission-card">
+        <div class="eyebrow"><span class="eyebrow-line"></span> TONIGHT'S RUN <span class="mission-index">01 / 03</span></div>
+        <h1>THE<br><em>LONG WAY</em><span class="title-dot">.</span></h1>
+        <p id="mission-copy">Cut through the afterglow.<br>Find the <strong>gold marker</strong> downtown.</p>
+        <div class="mission-bottom"><span class="mission-icon">↗</span><div><small>CURRENT OBJECTIVE</small><b id="objective">Reach the gold marker</b></div></div>
+      </section>
+      <section class="right-rail">
+        <div class="district-tag"><span class="district-symbol">✳</span><div><small>YOU ARE IN</small><b id="district">PALM AVENUE</b></div></div>
+        <div class="minimap-frame"><div class="map-label">CITY GRID <span>●</span></div><canvas id="minimap" width="180" height="180"></canvas><div class="map-coords">VICE HARBOR <span>N 25°46′</span></div></div>
+      </section>
+      <section class="bottom-left"><div class="weather"><span class="sun-icon">◒</span><div><b>GOLDEN HOUR</b><small>28° &nbsp; / &nbsp; CLEAR SKIES</small></div></div><div class="location"><span class="location-pin">⌖</span><div><b id="street">PALM AVENUE</b><small>VICE HARBOR, FL</small></div></div></section>
+      <section class="bottom-right">
+        <div class="cash"><small>AVAILABLE CASH</small><b><span>$</span><span id="cash">2,450</span></b></div>
+        <div class="speed-wrap"><div class="speedometer"><b id="speed">00</b><span>MPH</span></div><div class="speed-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      </section>
+      <div id="prompt" class="interaction-prompt"><kbd>E</kbd><span>GET IN <b>COUPE</b></span></div>
+      <div class="bottom-center"><span class="keycap">W</span><span class="keycap cluster">A<br>S<br>D</span><span class="controls-label">MOVE <i>/</i> DRIVE</span><span class="control-divider"></span><span class="keycap wide">SHIFT</span><span class="controls-label">SPRINT</span><span class="keycap wide">E</span><span class="controls-label">ENTER / EXIT</span><span class="control-divider"></span><span class="mouse-icon">↔</span><span class="controls-label">LOOK</span></div>
+    </main>
+    <div class="toast" id="toast"><span>✦</span><b>RUN COMPLETE</b><small>+$500 added to your wallet</small></div>
+    <div class="reticle"><span></span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
